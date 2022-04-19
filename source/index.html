@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Cat Energy</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+<body class="page-body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__logo-image main-header__logo-image--mobile" href="#">
-        <svg width="33.32px" height="37.61px"></svg>
+      <a class="main-header__logo-image" href="#">
+        <img src="img/logo-mobile.svg" width="34" height="38" alt="cat energy icon">
       </a>
-      <a class="main-header__logo-name logo-name logo-name--small" href="#">
-        <b>cat</b> energy
+      <a class="main-header__logo-name logo-name" href="#">
+        <img src="img/logo-name.svg" width="101" height="18" alt="cat energy">
       </a>
+    <nav class="main-header__main-navigation main-navigation">
       <button class="main-navigation__toggler" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-    </div>
-    <nav class="main-header__main-navigation main-navigation">
       <ul class="main-navigation__list">
         <li class="main-navigation__item main-navigation__item--current">
           <a class="main-navigation__link" href="index.html">
@@ -32,7 +31,7 @@
           </a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="programs.html">
+          <a class="main-navigation__link" href="form.html">
             подбор программы
           </a>
         </li>
@@ -40,16 +39,18 @@
     </nav>
     <!--Элементы, т.к. нигде не переиспользуется
 		title - блок, т.к. он переиспользуется далее на странице-->
-    <div class="main-header__promo">
-      <h1 class="main-header__promo-title title">Функциональное<br>питание для котов</h1>
+
+  </header>
+  <main class="main-content">
+    <section class="promo">
+      <h1 class="promo-title title">Функциональное<br>питание для котов</h1>
       <!--main-header__product-image - элемент, т.к. нигде не переиспользуется-->
-      <img class="main-header__promo-image" src="img/index-can-mobile1.png" width="280" height="270" alt="Продукция Cat Energy">
+      <img class="promo-image" src="img/index-can-mobile1.png" width="280" height="270"
+        alt="Продукция Cat Energy">
       <a class="main-header__select-program button" href="catalog.html">
         подобрать программу
       </a>
-    </div>
-  </header>
-  <main class="main-content">
+    </section>
     <section class="advantages">
       <!--main-content__advantage-list - элемент, т.к. список целиком не переиспользуется-->
       <ul class="main-content__advantages-list">

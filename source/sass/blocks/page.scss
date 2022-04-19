@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "oswald-400";
+  src:
+    url("oswaldregular.woff") format("woff"),
+    url("oswaldregular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "oswald-500";
+  src:
+    url("oswaldmedium.woff") format("woff"),
+    url("oswaldmedium.woff2") format("woff2");
+}
+
+.page {
+  font-size: 14px;
+}

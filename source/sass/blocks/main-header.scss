@@ -1,0 +1,32 @@
+.main-header {
+  background-color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}
+
+.main-header__logo-name {
+  display: inline-block;
+  margin-top: 23px;
+}
+
+.main-header__wrapper {
+  display: flex;
+  height: 58px;
+  align-items: center;
+  align-content: space-between;
+}
+
+.main-header__main-navigation {
+
+}
+
+.main-header__promo {
+  background-image: url("img/index-promo-background.jpg");
+  background-color: rgba(104, 183, 56, 0.85);
+}
