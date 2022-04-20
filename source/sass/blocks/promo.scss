@@ -1,0 +1,44 @@
+.promo {
+  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 70%, #ffffff 198px), url("../../img/background.png");
+
+
+  background-size: cover, auto 70%;
+  background-repeat: no-repeat;
+  background-position: 0 0, 50% 0;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  min-height: 302px;
+  position: relative;
+}
+
+.promo__title {
+  margin-top: 27px;
+}
+
+.promo__slogan {
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.promo__button {
+  margin-top: 50px;
+}
+
+.select-program {
+  min-height: 138px;
+  position: relative;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.promo__product-image {
+  content: url("../img/index-can-mobile1.png");
+  width: 280px;
+  height: 270px;
+  margin: auto;
+}
