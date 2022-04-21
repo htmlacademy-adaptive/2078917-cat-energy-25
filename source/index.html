@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Cat Energy</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page-body">
@@ -42,19 +42,20 @@
 
   </header>
   <main class="main-content">
-    <section class="main-content__promo promo">
-      <h1 class="promo__title title">>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котовФункциональное<br>питание для котов</h1>
-      <p class="promo__slogan">занялся собой? займись котом!</p>
-      <div class="promo__product-image"></div>
-      <a class="promo__button button" href="catalog.html">
-        <span class="button__text">подобрать программу</span>
-      </a>
+    <section class="promo">
+      <div class="promo__wrapper-bg">
+        <h1 class="promo__title title">Функциональное<br>питание для котов</h1>
+        <p class="promo__slogan">занялся собой? займись котом!</p>
+      </div>
+      <div class="promo__wrapper-button">
+        <a class="promo__button button" href="catalog.html">
+          <span class="button__text">подобрать программу</span>
+        </a>
+      </div>
     </section>
     <section class="advantages">
-      <!--main-content__advantage-list - элемент, т.к. список целиком не переиспользуется-->
-      <ul class="main-content__advantages-list">
-        <!--advantage - приватный блок для упрощения описания элементов списка преимуществ-->
-        <li class="main-content__advantages-item advantage advantage--weight-loss">
+      <ul class="advantages__list">
+        <li class="advantages__item advantage advantage--weight-loss">
           <h3 class="advantage__title">
             похудение
           </h3>
@@ -62,17 +63,14 @@
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
             поможет вашему питомцу сбросить лишний вес.
           </p>
-          <button class="advantage__button button">
-            <span>каталог slim</span>
+          <a class="advantage__button" href="#">
+            <span class="">каталог slim</span>
             <svg width="24px" height="12px">
               <use xlink:href="img/icon.svg"></use>
             </svg>
-          </button>
-          <svg class="advantage__symbol" width="50" height="53">
-            <use xlink:href="img/cat_back.svg"></use>
-          </svg>
+          </a>
         </li>
-        <li class="main-content__advantages-item advantag advantage--musle-gain">
+        <li class="advantages__item advantage advantage--musle-gain">
           <h3 class="advantage__title">
             набор массы
           </h3>

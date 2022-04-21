@@ -13,16 +13,21 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  min-width: 320px;
 }
 
 .main-navigation__item {
   border-top: 1px solid #e6e6e6;
   text-transform: uppercase;
-  padding: 10px 0;
+  line-height: 65px;
+}
+
+.main-navigation__item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+
 }
 
 .main-navigation__link {
   text-decoration: none;
   color: #321232;
+  font-size: 18px;
 }

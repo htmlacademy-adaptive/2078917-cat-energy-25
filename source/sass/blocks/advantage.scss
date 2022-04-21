@@ -1,0 +1,36 @@
+.advantage {
+	list-style-type: none;
+	background: #aaaccc;
+	margin: 20px 0 0;
+	padding: 30px;
+}
+
+.advantage::before {
+	content: "";
+	display: inline-block;
+	padding:0;
+	vertical-align: middle;
+	background: rgb(104, 183, 56);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.advantage__title {
+	text-transform: uppercase;
+	display: inline;
+	margin-left: 10px;
+	vertical-align: middle;
+	padding:0;
+}
+
+.advantage__description {
+	padding-bottom:20px;
+	border-bottom: 1px solid black;
+	margin: 20px 0 20px;
+}
+
+.advantage__button {
+	background-color: transparent;
+	border: none;
+}

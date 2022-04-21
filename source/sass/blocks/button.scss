@@ -1,6 +1,5 @@
 .button {
-  display: block;
-  min-width: 280px;
+  display: table;
   font-family: "oswald-400", "Arial", sans-serif;
   text-decoration: none;
   background-color: rgb(104, 183, 56);
@@ -8,11 +7,12 @@
 }
 
 .button__text {
-  display: inline-block;
+  display: table-cell;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
   padding: 11px 11px;
+
 }

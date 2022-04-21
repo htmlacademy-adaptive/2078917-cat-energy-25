@@ -1,15 +1,24 @@
-.promo {
-  background: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 70%, #ffffff 198px), url("../../img/background.png");
-
-
-  background-size: cover, auto 70%;
+.promo__wrapper-bg {
+  background: linear-gradient(to top, #ffffff 138px, rgba(104, 183, 56, 0.85) 138px), url("../../img/index-promo-background.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0, 50% 0;
+  background-position: left 0 top 0, center bottom 138px;
+  background-size: cover, 320px 302px;
+  min-height: 302px;
+  overflow: hidden;
+}
+
+.promo__wrapper-bg::after {
+  content: url("../../img/index-can-mobile1.png");
+  width: 280px;
+  height: 270px;
+  display: block;
+  margin: 29px auto 3px;
+}
+
+.promo {
   color: #ffffff;
   text-align: center;
-  overflow: hidden;
-  min-height: 302px;
-  position: relative;
+  min-width: 302px;
 }
 
 .promo__title {
@@ -19,26 +28,18 @@
 .promo__slogan {
   text-transform: uppercase;
   padding-top: 25px;
-  padding-bottom: 29px;
+  font-size: 14px;
+  line-height: 14px;
   margin: 0;
 }
 
 .promo__button {
-  margin-top: 50px;
+  min-width: 280px;
+  max-width: 550px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.select-program {
-  min-height: 138px;
-  position: relative;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.promo__product-image {
-  content: url("../img/index-can-mobile1.png");
-  width: 280px;
-  height: 270px;
-  margin: auto;
+.promo__wrapper-button {
+  margin: 0 20px;
 }
