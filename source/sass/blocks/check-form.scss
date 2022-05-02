@@ -49,8 +49,6 @@
   left: 0;
 }
 
-.check-form__box {}
-
 .check-form__box:checked + .check-form__name::after {
   display: block;
 }
