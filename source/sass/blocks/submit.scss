@@ -1,0 +1,22 @@
+.submit {
+  max-width: 550px;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+.submit__container {
+  margin: 0 20px;
+}
+
+.submit__button {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.submit__legend {
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}

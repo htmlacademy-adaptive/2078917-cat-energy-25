@@ -1,0 +1,25 @@
+.cat-aim {
+  margin-bottom: 26px;
+
+}
+
+.cat-aim__container {
+  padding: 0 20px 0 20px;
+  max-width: 510px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  overflow: hidden;
+}
+
+.cat-aim__list {
+  margin: 24px 0 16px;
+}
+
+@media (min-width: 510px) {
+  .cat-aim__container {
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+  }
+}

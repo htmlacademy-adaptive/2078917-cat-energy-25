@@ -1,0 +1,79 @@
+.instruction__wrapper {
+  margin: 0 auto;
+  min-width: 280px;
+  max-width: 550px;
+}
+
+.instruction {
+  margin: 0 20px 49px;
+}
+
+.instruction__header {
+
+  margin-top: 0;
+  margin-bottom: 42px;
+  font-weight: 400;
+}
+
+.instruction__list {
+  border-spacing: 20px;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.instruction__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.instruction__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.instruction__item::before {
+  content: "";
+  display: inline-block;
+  background: rgb(104, 183, 56);
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.instruction__item--nutrients::before {
+  content: "";
+  background-image: url("../../img/instruction__item--nutrients.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.instruction__item--powder::before {
+  content: "";
+  background-image: url("../../img/instruction__item--powder.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.instruction__item--replacement::before {
+  content: "";
+  background-image: url("../../img/instruction__item--replacement.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.instruction__item--result::before {
+  content: "";
+  background-image: url("../../img/instruction__item--result.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+}

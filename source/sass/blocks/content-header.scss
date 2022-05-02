@@ -1,0 +1,22 @@
+.content-header {
+  padding: 0 20px 0 20px;
+  max-width: 550px;
+  min-width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.content-header__title {
+  margin: 27px 0 37px;
+  display: block;
+}
+
+.content-header__instruction {
+  font-family: "oswald-400", "Arial", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 39px;
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  margin-right: 7px;
+}

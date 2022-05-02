@@ -1,0 +1,35 @@
+.comment-form {
+  background-image: linear-gradient(rgb(104, 183, 56), rgb(104, 183, 56));
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: left 20px;
+}
+
+
+.comment-form__title {
+  /*max-width: 550px;
+  min-width: 320px;
+  box-sizing: border-box;*/
+
+  margin: 0 0 38px;
+  width: 57vw;
+  padding-left: 20px;
+  padding-right: 19px;
+  background-color: #ffffff;
+}
+
+.comment-form__text-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  min-width: 320px;
+  box-sizing: border-box;
+  padding: 0 20px 0 20px;
+  height: 150px;
+}
+
+.comment-form__text {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+  margin: 0;
+}
