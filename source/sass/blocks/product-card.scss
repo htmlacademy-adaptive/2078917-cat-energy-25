@@ -15,10 +15,6 @@
   grid-area: image;
 }
 
-.product-card__image {
-
-}
-
 .product-card__name {
   grid-area: name;
   text-transform: uppercase;
@@ -46,12 +42,6 @@
   font-size: 12px;
   line-height: 16px;
 }
-
-.product-card__parameter-name {
-
-}
-
-.product-card__parameter-value {}
 
 .product-card__order {
   grid-area: btn;
