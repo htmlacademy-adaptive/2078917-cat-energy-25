@@ -1,5 +1,4 @@
 .advantage {
-  list-style-type: none;
   background: #f2f2f2;
   margin: 0;
   padding-top: 22px;
@@ -21,7 +20,8 @@
 }
 
 .advantage__title {
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
@@ -33,6 +33,8 @@
 
 .advantage__description {
   font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -78,7 +80,8 @@
 }
 
 .advantage__goto-name {
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   color: #000000;
   font-size: 16px;
   text-transform: uppercase;

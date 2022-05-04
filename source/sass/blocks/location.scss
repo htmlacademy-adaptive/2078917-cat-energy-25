@@ -1,18 +1,12 @@
 .location__contact {
-  padding-top: 26px;
-  padding-bottom: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 26px $mobile-space;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
-  max-width: 550px;
-  min-width: 320px;
-  box-sizing: border-box;
 }
 
 .location__contact-offer {
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   flex-grow: 0;
   flex-basis: 139px;

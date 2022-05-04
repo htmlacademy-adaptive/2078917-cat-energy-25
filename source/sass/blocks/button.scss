@@ -1,6 +1,7 @@
 .button {
   display: table;
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   text-decoration: none;
   background-color: #68b738;
   text-align: center;
@@ -43,7 +44,8 @@
 
   & .button__text {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 18px;
+    padding: 0;
   }
 }
 

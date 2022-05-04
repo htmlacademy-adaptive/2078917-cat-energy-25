@@ -9,28 +9,27 @@
 }
 
 .product-card__image-wrapper {
+  grid-area: image;
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: image;
 }
 
 .product-card__name {
   grid-area: name;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 400;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   width: 60%;
 }
 
 .product-card__parameters-list {
   grid-area: parameters;
-  list-style-type: none;
-  margin-top: 0;
+  list-style: none;
+  margin: 0;
   padding-left: 0;
 }
 
@@ -45,7 +44,7 @@
 
 .product-card__order {
   grid-area: btn;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .product-card--last {

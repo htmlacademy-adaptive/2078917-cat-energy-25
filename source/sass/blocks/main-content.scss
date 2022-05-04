@@ -1,3 +1,21 @@
+.main-content {
+  max-width: $mobile-max-width;
+  margin: 0 auto;
+}
+
 .main-content__promo {
   margin-bottom: 21px;
+}
+
+.main-content__advantages {
+  margin: 0 $mobile-space 22px;
+}
+
+.main-content__instruction {
+  margin: 0 $mobile-space 49px;
+}
+
+.main-content__example {
+  box-sizing: border-box;
+  padding: 0 $mobile-space 40px;
 }

@@ -1,15 +1,9 @@
-.advantages {
-  margin: 0 20px 20px;
-}
-
 .advantages__list {
-  min-width: 280px;
-  max-width: 550px;
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
-.advantages__item {
+.advantages__item:not(:last-of-type) {
   margin-bottom: 22px;
 }

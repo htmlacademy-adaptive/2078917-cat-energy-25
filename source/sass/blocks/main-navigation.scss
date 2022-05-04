@@ -1,7 +1,6 @@
 .main-navigation {
   position: relative;
-  color: #ffffff;
-  font-family: "oswald-400", "Arial", sans-serif;
+
 }
 
 .main-navigation__toggler {
@@ -12,15 +11,13 @@
 }
 
 .main-navigation__list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .main-navigation__item {
   border-top: 1px solid #e6e6e6;
-  text-transform: uppercase;
-  line-height: 65px;
 }
 
 .main-navigation__item:last-child {
@@ -28,6 +25,10 @@
 }
 
 .main-navigation__link {
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 65px;
   text-decoration: none;
   color: #321232;
   font-size: 18px;

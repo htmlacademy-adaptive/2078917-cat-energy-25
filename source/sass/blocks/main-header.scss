@@ -1,9 +1,8 @@
 .main-header {
-  background-color: #ffffff;
   position: relative;
   text-align: center;
-  color: #ffffff;
-  font-size: 14px;
+  max-width: $mobile-max-width;
+  margin: 0 auto;
 }
 
 .main-header__logo-image {
