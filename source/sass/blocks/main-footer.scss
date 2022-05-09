@@ -1,0 +1,121 @@
+.main-footer__information-wrapper {
+  background-color: #f2f2f2;
+  min-width: 320px;
+}
+
+.main-footer__information {
+  text-align: center;
+  max-width: 550px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.main-footer__logo-name::before {
+  content: url("../../img/logo_catenergy.svg");
+}
+
+.main-footer__logo-name {
+  padding-top: 39px;
+  padding-bottom: 26px;
+  display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-footer__social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 5px;
+  padding-top: 5px;
+  box-sizing: border-box;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.main-footer__social-item:active {
+  opacity: 0.3;
+}
+
+.main-footer__social-item:last-of-type {
+  margin-left: 30px;
+}
+
+.main-footer__social-item:first-of-type {
+  margin-right: 26px;
+}
+
+.main-footer__social-link--vk {
+  content: url("../../img/logo-vk.svg");
+
+  &:hover {
+    content: url("../../img/logo-vk-hover.svg");
+  }
+}
+
+.main-footer__social-link--youtube {
+  content: url("../../img/logo-youtube.svg");
+
+  &:hover {
+    content: url("../../img/logo-youtube-hover.svg");
+  }
+}
+
+.main-footer__social-link--telegram {
+  content: url("../../img/logo-telegram.svg");
+
+  &:hover {
+    content: url("../../img/logo-telegram-hover.svg");
+  }
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.main-footer__copyright-name {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-footer__copyright-link {
+  &:hover {
+    &::before {
+      content: url("../../img/logo-htmlacademy-hover.svg");
+    }
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.3;
+    }
+  }
+}
+
+.main-footer__copyright-link::before {
+  content: url("../../img/logo-htmlacademy.svg");
+  display: block;
+  height: 34px;
+}

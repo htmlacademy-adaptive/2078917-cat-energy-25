@@ -1,0 +1,12 @@
+.textarea-form {
+  font-family: "oswald-400", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: #444444;
+  font-size: 16px;
+  padding: 6px 0 0 15px;
+  resize: none;
+
+  &::placeholder {
+    color: #444444;
+  }
+}

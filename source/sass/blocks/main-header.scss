@@ -1,0 +1,27 @@
+.main-header {
+  background-color: #ffffff;
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-name {
+  display: inline-block;
+  margin-top: 22px;
+  margin-bottom: 26px;
+}

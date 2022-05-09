@@ -1,0 +1,8 @@
+.aim-list {
+  list-style: none;
+  padding: 0;
+}
+
+.aim-list__item:not(:last-of-type) {
+  margin-bottom: 13px;
+}
