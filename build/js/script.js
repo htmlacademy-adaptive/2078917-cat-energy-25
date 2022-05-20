@@ -3,13 +3,14 @@ const btnEnd = document.querySelector(".cat-change__btn--end");
 const containerBefore = document.querySelector(".slider__container--before");
 const handle = document.querySelector(".cat-change__controller-handle");
 const mapFrame = document.querySelector(".location__map-frame");
-const mapPic = document.querySelector(".location__map-pic");
+const mapPic = document.querySelector(".location__map-pic-wrapper");
 
 const menuList = document.querySelector(".main-navigation__list");
 const toggler = document.querySelector(".main-navigation__toggler");
 
 mapFrame.classList.remove("visually-hidden");
 mapPic.classList.add("visually-hidden");
+
 
 if (window.innerWidth < 768) {
   toggler.classList.add("main-navigation__toggler--open");
