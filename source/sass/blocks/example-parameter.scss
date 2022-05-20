@@ -57,13 +57,13 @@
 
 @media (min-width: $tablet-width) {
   .example-parameter {
-     &--cost {
+    &--cost {
       .example-parameter__value {
         display: block;
         border: none;
         font-size: 20px;
         line-height: 20px;
-        padding: 12px 2px 0 0 ;
+        padding: 12px 2px 0 0;
         width: 100%;
         margin: 0 0 9px 0;
       }
@@ -106,8 +106,8 @@
 
 @media (min-width: $desktop-width) {
   .example-parameter {
-     &--cost {
-       text-align: left;
+    &--cost {
+      text-align: left;
 
       .example-parameter__value {
         display: inline;

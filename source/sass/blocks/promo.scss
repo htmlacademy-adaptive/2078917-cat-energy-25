@@ -8,32 +8,26 @@
   padding: 0 0 138px;
 }
 
-@media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-    .promo__wrapper {
-      background: url("../img/index-can-mobile@2x.png") center bottom 3px no-repeat;
-      background-size: 280px 270px;
-    }
+@media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .promo__wrapper {
+    background: url("../img/index-can-mobile@2x.png") center bottom 3px no-repeat;
+    background-size: 280px 270px;
   }
+}
 
 .promo__inner-wrapper {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),url("../img/index-promo-background-mobile.jpg") center top/contain no-repeat;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile.jpg") center top/contain no-repeat;
   position: relative;
   z-index: -1;
   padding: 0 $mobile-space 164px;
 }
 
-@media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
-    .promo__inner-wrapper {
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),url("../img/index-promo-background-mobile@2x.jpg") center top/contain no-repeat;
-      background-size: 280px 270px;
-    }
+@media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .promo__inner-wrapper {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile@2x.jpg") center top/contain no-repeat;
+    background-size: 280px 270px;
   }
+}
 
 .promo__container {
   margin: 0 auto;
@@ -77,10 +71,7 @@
     padding: 0 calc(87px + $tablet-space) 609px;
   }
 
-  @media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .promo__wrapper {
       background: url("../img/index-can-tablet@2x.png") center bottom no-repeat;
       background-size: 709px 609px;
@@ -142,10 +133,7 @@
     z-index: -1;
   }
 
-  @media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .promo::before {
       background: url("../img/index-promo-background-desktop@2x.jpg") no-repeat;
       background-size: 1044px 696px;
@@ -186,10 +174,7 @@
     right: -389px;
   }
 
-  @media
-  only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-resolution: 192dpi),
-  only screen and (min-resolution: 2dppx) {
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     .promo__wrapper::before {
       background: url("../img/index-can-desktop@2x.png");
       background-size: 552px 499px;

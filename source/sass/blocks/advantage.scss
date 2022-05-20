@@ -37,7 +37,7 @@
   color: #444444;
   border-bottom: 1px solid #d9d9d9;
   padding: 0 0 21px 0;
-  margin: 23px 0 15px 20px
+  margin: 23px 0 15px 20px;
 }
 
 .advantage__goto {
@@ -95,10 +95,7 @@
   .advantage {
     display: grid;
     grid-template-columns: 1fr 316px;
-    grid-template-areas: "title symbol"
-    "description symbol"
-    "goto symbol"
-    "goto-name symbol";
+    grid-template-areas: "title symbol""description symbol""goto symbol""goto-name symbol";
     padding: 0;
 
     &::before {

@@ -47,17 +47,17 @@
     border-color: #ff8282;
   }
 
-  &[type="number"]::-webkit-outer-spin-button,
-  &[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
+  /*&[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }*/
 
-  &[type="number"],
-  &[type="number"]:hover,
-  &[type="number"]:focus {
-    appearance: none;
-    -moz-appearance: textfield;
-  }
+  /* &[type="number"],
+    &[type="number"]:hover,
+    &[type="number"]:focus {
+      appearance: none;
+      -moz-appearance: textfield;
+  }*/
 }
 
 .input-form--with-email {

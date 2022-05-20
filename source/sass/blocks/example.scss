@@ -87,7 +87,7 @@
     margin-right: 0;
   }
 
-.example__parameters-item--cost {
+  .example__parameters-item--cost {
     width: 180px;
     margin: 0 0 0 auto;
     text-align: right;
@@ -107,9 +107,7 @@
     margin: 0 auto;
     padding: 0;
     display: grid;
-    grid-template-areas: "header header header header"
-    "blank1 description cat-change blank2"
-    "blank1 param-list cat-change blank2";
+    grid-template-areas: "header header header header""blank1 description cat-change blank2""blank1 param-list cat-change blank2";
     grid-template-columns: 1fr minmax(640px, 740px) minmax(700px, 700px) 1fr;
     grid-template-rows: 0fr 0fr 0fr;
     column-gap: 0;
@@ -130,12 +128,12 @@
   .example__header-wrapper {
     max-width: 1220px;
     margin: 0 auto;
-    padding: 0 0 0 ;
+    padding: 0 0 0;
   }
 
   .example__header-title {
     padding: 43px 0 77px;
-    margin: 0 0 0  ;
+    margin: 0 0 0;
     width: 50%;
   }
 
@@ -175,7 +173,7 @@
 
   .example__interactive {
     grid-area: cat-change;
-    margin: 0 auto 0 0 ;
+    margin: 0 auto 0 0;
     width: 591px;
     height: 576px;
     margin-top: -178px;

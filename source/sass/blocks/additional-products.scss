@@ -27,7 +27,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .additional-products__title-wrapper {
     background-position: left 0 top 22px;
     margin: 0 0 79px;
@@ -43,7 +42,7 @@
   }
 
   .additional-products__item {
-    border-left: 1px solid #cdcdcd;;
-    border-right: 1px solid #cdcdcd;;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
 }

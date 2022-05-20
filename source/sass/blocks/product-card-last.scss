@@ -14,7 +14,7 @@
 }
 
 .product-card-last__name {
-  margin-top: 10px;
+  //margin-top: 10px;
   text-transform: uppercase;
   margin: 0 0 8px;
   font-size: 16px;
@@ -24,11 +24,11 @@
 }
 
 .product-card-last__text {
-font-family: "Arial", sans-serif;
-color: #444444;
-font-size: 12px;
-line-height: 16px;
-margin: 0 0 20px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 20px;
 }
 
 .product-card-last__order {
@@ -36,20 +36,19 @@ margin: 0 0 20px;
 }
 
 @media (min-width: $tablet-width) {
-   .product-card-last {
+  .product-card-last {
     background: #ffffff;
     border: 2px solid #f2f2f2;
     box-sizing: border-box;
     padding: 52px 38px 0;
 
-      &::before {
-        content: "";
-        background-image: url("../img/plus-tablet.svg");
-        width: 60px;
-        height: 60px;
-        margin: 0 auto 49px;
-      }
-
+    &::before {
+      content: "";
+      background-image: url("../img/plus-tablet.svg");
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 49px;
+    }
 
     .product-card-last__name {
       font-size: 20px;

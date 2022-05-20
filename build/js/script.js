@@ -95,6 +95,3 @@ if (btnStart) {
     containerBefore.classList.remove("slider__container--state-middle");
   });
 }
-
-
-
