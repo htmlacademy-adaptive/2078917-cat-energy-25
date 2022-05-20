@@ -1,7 +1,6 @@
 .content-header {
-  padding: 0 20px 0 20px;
-  max-width: 550px;
-  min-width: 320px;
+  padding: 0 $mobile-space 0 $mobile-space;
+  max-width: $mobile-max-width;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -12,11 +11,18 @@
 }
 
 .content-header__instruction {
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   margin: 0 0 39px;
   display: block;
   font-size: 14px;
   line-height: 18px;
   margin-right: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .content-header {
+    margin: 65px 0 80px;
+  }
 }

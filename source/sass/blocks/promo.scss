@@ -1,47 +1,217 @@
-.promo__inner-wrapper {
-  background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/index-promo-background.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: contain, contain;
-  background-position: center center, center top;
-  overflow: hidden;
-  padding-bottom: 164px;
-  position: relative;
-  z-index: -1;
-}
-
-.promo__wrapper {
-  background-image: url("../../img/index-can-mobile1.png");
-  background-repeat: no-repeat;
-  background-position: center bottom 3px;
-  padding-bottom: 138px;
-}
-
 .promo {
   color: #ffffff;
   text-align: center;
-  min-width: 320px;
+}
+
+.promo__wrapper {
+  background: url("../img/index-can-mobile.png") center bottom 3px no-repeat;
+  padding: 0 0 138px;
+}
+
+@media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .promo__wrapper {
+    background: url("../img/index-can-mobile@2x.png") center bottom 3px no-repeat;
+    background-size: 280px 270px;
+  }
+}
+
+.promo__inner-wrapper {
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile.jpg") center top/contain no-repeat;
+  position: relative;
+  z-index: -1;
+  padding: 0 $mobile-space 164px;
+}
+
+@media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .promo__inner-wrapper {
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile@2x.jpg") center top/contain no-repeat;
+    background-size: 280px 270px;
+  }
+}
+
+.promo__container {
+  margin: 0 auto;
+  max-width: $mobile-max-width;
 }
 
 .promo__title {
-  margin-top: 27px;
-  margin-bottom: 25px;
+  margin: 0;
+  padding: 27px 0 25px;
 }
 
 .promo__slogan {
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
   margin: 0;
 }
 
-.promo__button {
-  min-width: 280px;
-  max-width: 550px;
+.promo__wrapper-button {
   margin: 0 auto;
+  max-width: $mobile-max-width;
+  padding: 0 $mobile-space;
+}
+
+.promo__button {
   width: 100%;
 }
 
-.promo__wrapper-button {
-  margin: 0 20px;
+@media (min-width: $tablet-width) {
+  .promo {
+    color: #000000;
+    text-align: left;
+    position: relative;
+  }
+
+  .promo__wrapper {
+    background: url("../img/index-can-tablet.png") center bottom no-repeat;
+    background-size: 709px 609px;
+    padding: 0 calc(87px + $tablet-space) 609px;
+  }
+
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .promo__wrapper {
+      background: url("../img/index-can-tablet@2x.png") center bottom no-repeat;
+      background-size: 709px 609px;
+    }
+  }
+
+  .promo__inner-wrapper {
+    background: none;
+    padding: 0 0 20px;
+  }
+
+  .promo__container {
+    max-width: $tablet-max-width;
+  }
+
+  .promo__title {
+    padding: 0 0 41px;
+    width: 450px;
+  }
+
+  .promo__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    width: 450px;
+  }
+
+  .promo__wrapper-button {
+    height: 0;
+    position: relative;
+    margin: 0 auto;
+    bottom: 579px;
+    max-width: $tablet-max-width;
+    padding: 0 121px;
+  }
+
+  .promo__button {
+    width: 244px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  .promo::before {
+    content: "";
+    background: url("../img/index-promo-background-desktop.jpg") no-repeat;
+    background-size: 1044px 696px;
+    height: 696px;
+    width: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+  }
+
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .promo::before {
+      background: url("../img/index-promo-background-desktop@2x.jpg") no-repeat;
+      background-size: 1044px 696px;
+    }
+  }
+
+  .promo::after {
+    content: "";
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+    height: 100%;
+    width: 50%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: -1;
+  }
+
+  .promo__wrapper {
+    background: none;
+    padding: 108px 114px 291px 110px;
+    position: relative;
+    max-width: 720px;
+    width: 100%;
+    margin: 0 0 0 auto;
+    box-sizing: border-box;
+  }
+
+  .promo__wrapper::before {
+    content: "";
+    background: url("../img/index-can-desktop.png");
+    background-size: 552px 499px;
+    width: 552px;
+    height: 499px;
+    display: block;
+    position: absolute;
+    top: 26px;
+    right: -389px;
+  }
+
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .promo__wrapper::before {
+      background: url("../img/index-can-desktop@2x.png");
+      background-size: 552px 499px;
+    }
+  }
+
+  .promo__inner-wrapper {
+    padding: 0;
+    margin: 0;
+  }
+
+  .promo__container {
+    max-width: none;
+  }
+
+  .promo__title {
+    margin: 0 0 40px 80px;
+    padding: 0;
+    width: auto;
+    max-width: 416px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  .promo__slogan {
+    margin: 0 0 0 80px;
+    width: auto;
+    max-width: 416px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+  .promo__wrapper-button {
+    left: calc(50% - 530px);
+    bottom: 238px;
+    position: absolute;
+    padding: 0;
+    width: 244px;
+  }
 }

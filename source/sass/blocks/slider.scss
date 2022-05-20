@@ -1,0 +1,137 @@
+.slider {
+  width: 280px;
+  height: 232px;
+  position: relative;
+}
+
+.slider__container {
+  position: absolute;
+  width: 280px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 2s;
+}
+
+.slider__container--before {
+  z-index: 5;
+  background: #eaeaea;
+}
+
+.slider__container--after {
+  z-index: 1;
+  background: #eaeaea;
+}
+
+.slider__container--state-before {
+  width: 100%;
+}
+
+.slider__container--state-after {
+  width: 0;
+}
+
+.slider__state {
+  width: 280px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slider__state--before {
+  background: url("../img/cat-fat-mobile.png") center no-repeat;
+  background-size: 280px 232px;
+}
+
+@media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/ only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .slider__state--before {
+    background: url("../img/cat-fat-mobile@2x.png") center no-repeat;
+    background-size: 280px 232px;
+  }
+}
+
+.slider__state--after {
+  background: url("../img/cat-skinny-mobile.png") center no-repeat;
+  background-size: 243px 232px;
+}
+
+@media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/ only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .slider__state--after {
+    background: url("../img/cat-skinny-mobile@2x.png") center no-repeat;
+    background-size: 243px 232px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    height: 511px;
+    width: 592px;
+  }
+
+  .slider__container {
+    width: 592px;
+    height: 511px;
+  }
+
+  .slider__container--state-before {
+    width: 100%;
+  }
+
+  .slider__container--state-after {
+    width: 0;
+  }
+
+  .slider__container--state-middle {
+    width: 50%;
+  }
+
+  .slider__container::before {
+    content: "";
+    position: absolute;
+    height: 172px;
+    width: 100%;
+    display: block;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .slider__state {
+    width: 592px;
+    height: 511px;
+    z-index: 5;
+  }
+
+  .slider__state--before {
+    background: url("../img/cat-fat.png") 0 0 no-repeat;
+    background-size: 657px 499px;
+  }
+
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/ only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .slider__state--before {
+      background: url("../img/cat-fat@2x.png") 0 0 no-repeat;
+      background-size: 657px 499px;
+    }
+  }
+
+  .slider__state--after {
+    background: url("../img/cat-skinny.png") 58px 0 no-repeat;
+    background-size: 535px 511px;
+  }
+
+  @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/ only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .slider__state--after {
+      background: url("../img/cat-skinny@2x.png") 58px 0 no-repeat;
+      background-size: 535px 511px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .slider__container::before {
+      height: 179px;
+    }
+  }
+}

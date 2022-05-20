@@ -1,35 +1,128 @@
 .example-parameter {
-  list-style-type: none;
   text-align: center;
+
+  &--cost {
+    text-align: right;
+
+    .example-parameter__value {
+      display: inline;
+      border: none;
+      font-size: 14px;
+      padding: 0;
+      width: 100%;
+    }
+
+    .example-parameter__name {
+      display: inline;
+      font-size: 14px;
+      font-family: "oswald", "Arial", sans-serif;
+      font-weight: 400;
+      color: #000000;
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+    }
+  }
 }
 
 .example-parameter__value {
+  box-sizing: border-box;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   font-size: 24px;
-  line-height: 50px;
-  font-family: "oswald-400", "Arial", sans-serif;
-  padding-left: 0;
-  padding-right: 0;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
+  padding: 8px 0 11px 0;
   color: #000000;
   text-transform: uppercase;
-  padding-bottom: 4px;
-  min-width: 124px;
-  box-sizing: border-box;
+  width: 124px;
 }
 
 .example-parameter__name {
   display: block;
-  margin-top: -9px;
+  margin-top: -11px;
   margin-left: 18px;
   margin-right: 20px;
   margin-bottom: 0;
   font-size: 12px;
   line-height: 12px;
-  box-sizing: border-box;
   padding-left: 14px;
   padding-right: 14px;
   font-family: "Arial", sans-serif;
   color: #444444;
   background-color: #eaeaea;
+  max-width: 87px;
+}
+
+@media (min-width: $tablet-width) {
+  .example-parameter {
+    &--cost {
+      .example-parameter__value {
+        display: block;
+        border: none;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 12px 2px 0 0;
+        width: 100%;
+        margin: 0 0 9px 0;
+      }
+
+      .example-parameter__name {
+        display: block;
+        font-size: 20px;
+        line-height: 20px;
+        font-family: "oswald", "Arial", sans-serif;
+        font-weight: 400;
+        color: #000000;
+        text-transform: uppercase;
+        margin: 0 0 0 auto;
+        padding: 0;
+        position: static;
+      }
+    }
+  }
+
+  .example-parameter__value {
+    font-size: 30px;
+    width: 162px;
+    padding: 10px 0 15px 0;
+  }
+
+  .example-parameter__name {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    line-height: 14px;
+    padding-left: 7px;
+    padding-right: 8px;
+    //box-sizing: border-box;
+    background-color: #ffffff;
+    max-width: 140px;
+    position: relative;
+    top: -11px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-parameter {
+    &--cost {
+      text-align: left;
+
+      .example-parameter__value {
+        display: inline;
+        margin: 0 63px 0 0;
+        line-height: 40px;
+      }
+
+      .example-parameter__name {
+        display: inline;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .example-parameter__name {
+    background-color: #eaeaea;
+  }
 }

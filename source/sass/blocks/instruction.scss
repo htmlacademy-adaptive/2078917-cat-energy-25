@@ -1,78 +1,140 @@
-.instruction__wrapper {
-  margin: 0 auto;
-  min-width: 280px;
-  max-width: 550px;
-}
-
 .instruction {
-  margin: 0 20px 49px;
+  padding: 0 $mobile-space 0;
 }
 
 .instruction__header {
-  margin-top: 0;
-  margin-bottom: 42px;
-  font-weight: 400;
+  margin: 0 0 42px;
 }
 
 .instruction__list {
-  border-spacing: 20px;
-  list-style-type: none;
+  list-style: none;
   padding-left: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .instruction__item {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
+
+  &:last-of-type {
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background: rgb(104, 183, 56);
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.instruction__item--nutrients::before {
+  background-image: url("../img/instruction__item--nutrients.svg");
+}
+
+.instruction__item--powder::before {
+  background-image: url("../img/instruction__item--powder.svg");
+}
+
+.instruction__item--replacement::before {
+  background-image: url("../img/instruction__item--replacement.svg");
+}
+
+.instruction__item--result::before {
+  background-image: url("../img/instruction__item--result.svg");
+}
+
+.instruction__description {
   color: #444444;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
 
-.instruction__item:last-of-type {
-  margin-bottom: 0;
+@media (min-width: $tablet-width) {
+  .instruction {
+    padding: 0 $tablet-space 104px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .instruction__wrapper {
+    margin: 0 auto;
+    max-width: $tablet-max-width;
+  }
+
+  .instruction__header {
+    margin: 0 0 32px;
+  }
+
+  .instruction__list {
+    display: grid;
+    grid-template-columns: repeat(2, 245px);
+    column-gap: 139px;
+    row-gap: 95px;
+    counter-reset: list 0;
+  }
+
+  .instruction__item {
+    display: block;
+    margin: 0;
+    position: relative;
+  }
+
+  .instruction__item::before {
+    display: block;
+    margin: 40px 0 31px 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .instruction__item::after {
+    content: counter(list);
+    font-family: "oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    display: block;
+    counter-increment: list;
+    position: absolute;
+    top: 0;
+    left: 113px;
+    z-index: -1;
+  }
+
+  .instruction__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
-.instruction__item::before {
-  content: "";
-  display: inline-block;
-  background: rgb(104, 183, 56);
-  width: 60px;
-  height: 60px;
-  flex-shrink: 0;
-  margin-right: 20px;
-}
+@media (min-width: $desktop-width) {
+  .instruction__wrapper {
+    margin: 0;
+    max-width: none;
+  }
 
-.instruction__item--nutrients::before {
-  content: "";
-  background-image: url("../../img/instruction__item--nutrients.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
+  .instruction__header {
+    margin: 0 0 32px;
+  }
 
-.instruction__item--powder::before {
-  content: "";
-  background-image: url("../../img/instruction__item--powder.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 80px;
+    row-gap: 0;
+  }
 
-.instruction__item--replacement::before {
-  content: "";
-  background-image: url("../../img/instruction__item--replacement.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
-
-.instruction__item--result::before {
-  content: "";
-  background-image: url("../../img/instruction__item--result.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+  .instruction__item {
+    width: 245px;
+    min-height: 280px;
+    flex-shrink: 0;
+  }
 }

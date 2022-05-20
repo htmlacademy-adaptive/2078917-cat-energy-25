@@ -1,18 +1,14 @@
 .location__contact {
-  padding-top: 26px;
-  padding-bottom: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 26px $mobile-space;
   display: flex;
   justify-content: space-between;
+  max-width: $mobile-max-width;
   margin: 0 auto;
-  max-width: 550px;
-  min-width: 320px;
-  box-sizing: border-box;
 }
 
 .location__contact-offer {
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   flex-grow: 0;
   flex-basis: 139px;
@@ -38,8 +34,108 @@
   width: 100%;
 }
 
+.location__map-pic {
+  width: 100%;
+  height: 362px;
+}
+
 .location--dark-bg {
   .location__contact {
     background-color: #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .location__contact {
+    padding: 60px 70px;
+    max-width: $tablet-max-width;
+  }
+
+  .location__contact-offer {
+    font-size: 20px;
+    line-height: 26px;
+    flex-basis: 180px;
+  }
+
+  .location__contact-address {
+    font-size: 16px;
+    flex-basis: 180px;
+    text-align: right;
+  }
+
+  .location__map {
+    height: 400px;
+  }
+
+  .location__map-frame {
+    height: 400px;
+  }
+
+  .location__map-pic {
+    height: 400px;
+  }
+
+  .location__contact-address-street {
+    display: inline-block;
+    margin: -4px 0 20px;
+  }
+
+  .location__contact-address-city {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    position: relative;
+    padding: 95px 0 107px;
+  }
+
+  .location__contact {
+    padding: 59px 80px;
+    position: relative;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 565px;
+    align-items: center;
+    z-index: 10;
+    left: 50%;
+    margin: 0 0 0 -610px;
+  }
+
+  .location__contact-offer {
+    flex-basis: 155px;
+  }
+
+  .location__contact-address {
+    flex-basis: 155px;
+    text-align: left;
+  }
+
+  .location__map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .location__map-frame {
+    height: 100%;
+    width: 100%;
+  }
+
+  .location__map-pic {
+    height: 100%;
+  }
+
+  .location__contact-address-street {
+    display: inline-block;
+    margin: 0 0 19px;
+  }
+
+  .location__contact-address-city {
+    display: inline-block;
   }
 }

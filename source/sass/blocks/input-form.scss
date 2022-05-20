@@ -1,7 +1,8 @@
 .input-form {
   display: flex;
   align-items: center;
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   color: #444444;
   line-height: 17px;
@@ -15,17 +16,16 @@
 }
 
 .input-form__field {
-  font-family: "oswald-400", "Arial", sans-serif;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
   text-transform: uppercase;
   color: #444444;
   font-size: 16px;
   line-height: 45px;
   display: inline-block;
   height: 45px;
-
   flex-grow: 1;
-
-  padding: 0 50px 0 15px;
+  padding: 0 0 0 15px;
   border-radius: 0;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
@@ -46,6 +46,18 @@
   &:invalid {
     border-color: #ff8282;
   }
+
+  /*&[type="number"]::-webkit-outer-spin-button,
+    &[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }*/
+
+  /* &[type="number"],
+    &[type="number"]:hover,
+    &[type="number"]:focus {
+      appearance: none;
+      -moz-appearance: textfield;
+  }*/
 }
 
 .input-form--with-email {
@@ -66,6 +78,10 @@
 
   & .input-form__name {
     margin-right: 10px;
+  }
+
+  & .input-form__field {
+    padding: 0 50px 0 17px;
   }
 }
 
@@ -90,6 +106,6 @@
   }
 
   & .input-form__field {
-    padding-left: 17px;
+    padding: 0 50px 0 17px;
   }
 }
