@@ -1,7 +1,6 @@
 .content-header {
-  padding: 0 20px 0 20px;
-  max-width: 550px;
-  min-width: 320px;
+  padding: 0 $mobile-space 0 $mobile-space;
+  max-width: $mobile-max-width;
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -20,4 +19,10 @@
   font-size: 14px;
   line-height: 18px;
   margin-right: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .content-header {
+    margin: 65px 0 80px;
+  }
 }

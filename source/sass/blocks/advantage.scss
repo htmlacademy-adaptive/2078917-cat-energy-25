@@ -1,22 +1,19 @@
 .advantage {
   background: #f2f2f2;
-  margin: 0;
-  padding-top: 22px;
-  padding-bottom: 16px;
-  padding-right: 20px;
+  padding: 24px 20px 18px 0;
   position: relative;
-}
 
-.advantage::before {
-  content: "";
-  display: inline-block;
-  padding: 0;
-  vertical-align: middle;
-  background: rgb(104, 183, 56);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-left: 22px;
+  &::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background: rgb(104, 183, 56);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 0 0 22px;
+  }
 }
 
 .advantage__title {
@@ -26,9 +23,9 @@
   line-height: 37px;
   text-transform: uppercase;
   display: inline;
-  margin-left: 15px;
   vertical-align: middle;
   padding: 0;
+  margin: 0 0 0 15px;
 }
 
 .advantage__description {
@@ -38,65 +35,167 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  padding-bottom: 23px;
   border-bottom: 1px solid #d9d9d9;
-  margin-top: 23px;
-  margin-bottom: 15px;
-  margin-left: 20px;
-  margin-right: 0;
-}
-
-.advantage__goto::after {
-  content: "";
-  background-image: url("../../img/icon_arrow.svg");
-  background-size: 32px 12px;
-  background-repeat: no-repeat;
-  height: 12px;
-  width: 32px;
-  margin-left: 17px;
-  flex-shrink: 0;
-  transition: background 0.1s ease;
+  padding: 0 0 21px 0;
+  margin: 23px 0 15px 20px
 }
 
 .advantage__goto {
-  text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
-  font-size: 16px;
   vertical-align: bottom;
   display: inline-flex;
   align-items: center;
-  margin-left: 19px;
+  margin: 0 0 0 19px;
 
-  &:active {
-    opacity: 0.3;
+  &::after {
+    content: "";
+    background-image: url("../img/icon_arrow.svg");
+    background-position-x: -9px;
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 32px;
+    margin: 0 0 0 17px;
+    transition: background 0.1s ease;
   }
 
   &:hover {
     &::after {
-      background-image: url("../../img/icon_arrow-long.svg");
+      background-position-x: 0;
     }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
 .advantage__goto-name {
   font-family: "oswald", "Arial", sans-serif;
   font-weight: 400;
+  text-transform: uppercase;
   color: #000000;
   font-size: 16px;
-  text-transform: uppercase;
 }
 
 .advantage--weight-loss::after {
-  content: url("../../img/advantage-slim.svg");
+  content: url("../img/advantage-slim.svg");
   position: absolute;
   top: 21px;
   left: 29px;
 }
 
 .advantage--musle-gain::after {
-  content: url("../../img/musle-gain.svg");
+  content: url("../img/musle-gain.svg");
   position: absolute;
-  top: 33px;
+  top: 35px;
   left: 13px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage {
+    display: grid;
+    grid-template-columns: 1fr 316px;
+    grid-template-areas: "title symbol"
+    "description symbol"
+    "goto symbol"
+    "goto-name symbol";
+    padding: 0;
+
+    &::before {
+      grid-area: symbol;
+      width: 200px;
+      height: 200px;
+      margin: 93px 0 0 55px;
+    }
+
+    &::after {
+      grid-area: symbol;
+    }
+  }
+
+  .advantage__title {
+    grid-area: title;
+    font-size: 36px;
+    line-height: 36px;
+    //padding: 0;
+    margin: 77px 0 24px 53px;
+  }
+
+  .advantage__description {
+    grid-area: description;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+    padding: 0;
+    margin: 0 0 52px 52px;
+  }
+
+  .advantage__goto {
+    grid-area: goto;
+    margin: 0 0 57px 52px;
+
+    &::after {
+      margin: 0 0 0 27px;
+    }
+  }
+
+  .advantage__goto-name {
+    grid-area: goto-name;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .advantage--weight-loss::after {
+    content: url("../img/advantage-slim-tablet.svg");
+    top: 82px;
+    left: 84px;
+  }
+
+  .advantage--musle-gain::after {
+    content: url("../img/cat_muscle-gain-tablet.svg");
+    top: 136px;
+    left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage {
+    padding: 47px 51px 59px 52px;
+    display: block;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      margin: 0;
+    }
+  }
+
+  .advantage__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 7px 58px;
+    display: inline-block;
+  }
+
+  .advantage__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 39px 0 27px 0;
+  }
+
+  .advantage__goto {
+    margin: 0;
+  }
+
+  .advantage--weight-loss::after {
+    content: url("../img/advantage-slim-desktop.svg");
+    top: 41px;
+    left: 67px;
+  }
+
+  .advantage--musle-gain::after {
+    content: url("../img/cat_muscle-gain-desktop.svg");
+    top: 67px;
+    left: 33px;
+  }
 }

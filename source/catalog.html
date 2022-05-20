@@ -4,23 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог Cat Energy</title>
+  <link rel="icon" href="favicon.ico"><!--32x32-->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"><!--180x180-->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="./css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo-image" href="#">
-      <img src="img/logo-mobile.svg" alt="cat energy icon">
+    <a class="main-header__logo-image logo-image" href="#">
     </a>
     <a class="main-header__logo-name logo-name" href="#">
       <img src="img/logo-name.svg" alt="cat energy">
     </a>
-    <nav class="main-header__main-navigation main-navigation visually-hidden">
+    <nav class="main-header__main-navigation main-navigation">
       <a class="main-navigation__toggler">
       </a>
       <ul class="main-navigation__list">
-        <li class="main-navigation__item main-navigation__item--current">
+        <li class="main-navigation__item">
           <a class="main-navigation__link" href="index.html">
             главная
           </a>
@@ -31,7 +34,7 @@
           </a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="form.html">
+          <a class="main-navigation__link main-navigation__item--current" href="form.html">
             подбор программы
           </a>
         </li>
@@ -48,7 +51,10 @@
       <ul class="catalog__list">
           <li class="catalog__item product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/catalog-1.png" width="68" height="86" alt="Продукт Cat Energy линейки Pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-1-tablet.png 1x, img/catalog-1-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog-1.png" srcset="img/catalog-1@2x.png 2x" alt="Продукт Cat Energy линейки Pro">
+              </picture>
             </div>
             <h3 class="product-card__name">cat energy pro 500 г</h3>
             <ul class="product-card__parameters-list">
@@ -71,8 +77,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/catalog-2.png" width="84" height="100"
-                alt="Продукт Cat Energy линейки Pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-2-tablet.png 1x, img/catalog-2-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog-2.png" srcset="img/catalog-2@2x.png 2x" alt="Продукт Cat Energy линейки Pro">
+              </picture>
             </div>
             <h3 class="product-card__name">cat energy pro 1000 г</h3>
             <ul class="product-card__parameters-list">
@@ -95,8 +103,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/catalog-3.png" width="68" height="78"
-                alt="Продукт Cat Energy линейки Pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-3-tablet.png 1x, img/catalog-3-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog-3.png" srcset="img/catalog-3@2x.png 2x" alt="Продукт Cat Energy линейки Pro">
+              </picture>
             </div>
             <h3 class="product-card__name">cat energy pro 500 г</h3>
             <ul class="product-card__parameters-list">
@@ -119,8 +129,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/catalog-4.png" width="84" height="101"
-                alt="Продукт Cat Energy линейки Pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-4-tablet.png 1x, img/catalog-4-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog-4.png" srcset="img/catalog-4@2x.png 2x" alt="Продукт Cat Energy линейки Pro">
+              </picture>
             </div>
             <h3 class="product-card__name">cat energy pro 1000 г</h3>
             <ul class="product-card__parameters-list">
@@ -143,8 +155,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/catalog-5.png" width="68" height="78"
-                alt="Продукт Cat Energy линейки Pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-5-tablet.png 1x, img/catalog-5-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog-5.png" srcset="img/catalog-5@2x.png 2x" alt="Продукт Cat Energy линейки Pro">
+              </picture>
             </div>
             <h3 class="product-card__name">cat energy slim 500 г</h3>
             <ul class="product-card__parameters-list">
@@ -167,8 +181,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/catalog-6.png" width="84" height="101"
-                alt="Продукт Cat Energy линейки Pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-6-tablet.png 1x, img/catalog-6-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog-6.png" srcset="img/catalog-6@2x.png 2x" alt="Продукт Cat Energy линейки Pro">
+              </picture>
             </div>
             <h3 class="product-card__name">cat energy slim 1000 г</h3>
             <ul class="product-card__parameters-list">
@@ -191,8 +207,10 @@
           </li>
           <li class="catalog__item product-card">
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/catalog-7.png" width="72" height="84"
-                alt="Продукт Cat Energy линейки Pro">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/catalog-7-tablet.png 1x, img/catalog-7-tablet@2x.png 2x">
+                <img class="product-card__image" src="img/catalog-7.png" srcset="img/catalog-7@2x.png 2x" alt="Продукт Cat Energy линейки Pro">
+              </picture>
             </div>
             <h3 class="product-card__name">cat energy slim 500 г</h3>
             <ul class="product-card__parameters-list">
@@ -213,23 +231,18 @@
               <span class="button__text">Заказать</span>
             </a>
           </li>
-          <li class="catalog__item product-card product-card--last">
-            <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/plus.svg" width="30" height="30" alt="Это еще не всё">
-            </div>
-            <h3 class="product-card__name">показать еще 100500 товаров</h3>
-
-                <span class="product-card__parameter-value">На самом деле вкусов гораздо больше!</span>
-
-            <a class="product-card__order button button--fade">
+          <li class="catalog__item product-card-last">
+            <h3 class="product-card-last__name">показать еще 100500 товаров</h3>
+            <span class="product-card-last__text">На самом деле вкусов гораздо больше!</span>
+            <a class="product-card-last__order button button--fade">
               <span class="button__text">показать все</span>
             </a>
           </li>
       </ul>
     </section>
     <section class="main-catalog__add-prod additional-products">
-      <div class="additional-products__title">
-        <h2 class="title title--secondary">
+      <div class="additional-products__title-wrapper">
+        <h2 class="additional-products__title title title--secondary">
           Дополнительные товары
         </h2>
       </div>
@@ -242,7 +255,7 @@
                 <span class="product-card__parameter-value">200 Р.</span>
               </li>
             </ul>
-            <a class="product-card__order button">
+            <a class="product-card__order button button--order">
               <span class="button__text">Заказать</span>
             </a>
           </li>
@@ -254,7 +267,7 @@
                 <span class="product-card__parameter-value">50 Р.</span>
               </li>
             </ul>
-            <a class="product-card__order button">
+            <a class="product-card__order button button--order">
               <span class="button__text">Заказать</span>
             </a>
           </li>
@@ -266,7 +279,7 @@
                 <span class="product-card__parameter-value">100 Р.</span>
               </li>
             </ul>
-            <a class="product-card__order button">
+            <a class="product-card__order button button--order">
               <span class="button__text">Заказать</span>
             </a>
           </li>
@@ -278,7 +291,7 @@
                 <span class="product-card__parameter-value">300 Р.</span>
               </li>
             </ul>
-            <a class="product-card__order button">
+            <a class="product-card__order button button--order">
               <span class="button__text">Заказать</span>
             </a>
           </li>
@@ -298,6 +311,10 @@
       <div class="location__contact">
         <div class="location__contact-offer">
           приглашаем<br>к сотрудничеству дилеров!
+          приглашаем<br>к сотрудничеству дилеров!
+
+приглашаем<br>к сотрудничеству дилеров!
+
         </div>
         <div class="location__contact-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
       </div>

@@ -1,3 +1,7 @@
+.advantages {
+  padding: 0 $mobile-space 0;
+}
+
 .advantages__list {
   list-style: none;
   padding-left: 0;
@@ -5,5 +9,31 @@
 }
 
 .advantages__item:not(:last-of-type) {
-  margin-bottom: 22px;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding: 0 $tablet-space 0;
+  }
+
+
+  .advantages__item:not(:last-of-type) {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
+    gap: 80px;
+    width: fit-content;
+  }
+
+
+  .advantages__item:not(:last-of-type) {
+  margin: 0;
+}
 }

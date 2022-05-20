@@ -7,6 +7,10 @@
   text-align: center;
   border: none;
 
+  &:hover {
+    background-color: #5eaa2f;;
+  }
+
   &:active {
     background-color: #5eaa2f;
   }
@@ -66,5 +70,26 @@
     & .button__text {
       opacity: 0.3;
     }
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .button {
+    height: 54px;
+
+    &--order {
+      height: 40px;
+    }
+
+    &--fade {
+      height: 40px;
+    }
+  }
+
+  .button__text {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 0;
   }
 }
