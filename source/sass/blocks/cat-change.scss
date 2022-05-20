@@ -156,24 +156,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .cat-change {
-    /*position: absolute;*/
-  }
- /* .cat-change::before {
-    margin: 0 0 25px;
-    background-size: 657px 499px;
-    background-position-x: 0px;
-    background-position-y: 0px;
-  }
-
-  .cat-change::after {
-    left: calc(50% - 266px);
-  }*/
-
   .cat-change__controller {
     margin: 0 auto;
-    /*box-sizing: border-box;
-    padding: 0 9px 0 13px;*/
   }
 
 }

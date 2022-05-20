@@ -7,27 +7,3 @@
     opacity: 0.6;
   }
 }
-/*
-.logo-image::before {
-  content: "";
-  background-image: url("../../img/logo-mobile.svg");
-  width: 34px;
-  height: 38px;
-  display: block;
-}
-
-@media (min-width: $tablet-width) {
-  .logo-image::before {
-    background-image: url("../../img/logo-tablet.svg");
-    width: 174px;
-    height: 52px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .logo-image::before {
-    background-image: url("../../img/logo-desktop.svg");
-    width: 202px;
-    height: 59px;
-  }
-}*/
