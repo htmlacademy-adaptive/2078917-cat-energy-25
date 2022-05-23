@@ -2,18 +2,21 @@
   text-align: center;
 
   &--cost {
-    text-align: right;
+    //text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .example-parameter__value {
-      display: inline;
+      display: inline-block;
       border: none;
       font-size: 14px;
       padding: 0;
-      width: 100%;
+      //width: 100%;
     }
 
     .example-parameter__name {
-      display: inline;
+      display: inline-block;
       font-size: 14px;
       font-family: "oswald", "Arial", sans-serif;
       font-weight: 400;
@@ -57,7 +60,9 @@
 
 @media (min-width: $tablet-width) {
   .example-parameter {
+    flex-direction: column;
     &--cost {
+      text-align: right;
       .example-parameter__value {
         display: block;
         border: none;
@@ -108,16 +113,24 @@
   .example-parameter {
     &--cost {
       text-align: left;
+      flex-direction: row;
+      justify-content: flex-start;
 
       .example-parameter__value {
         display: inline;
-        margin: 0 63px 0 0;
-        line-height: 40px;
+        margin: 0 30px 0 0;
+        //line-height: 40px;
+        width: 175px;
+        padding: 0;
       }
 
       .example-parameter__name {
         display: inline;
-        line-height: 40px;
+        //line-height: 40px;
+        max-width: none;
+        width: 162px;
+        text-align: center;
+        margin: 0;
       }
     }
   }

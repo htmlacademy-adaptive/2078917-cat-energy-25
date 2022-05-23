@@ -1,13 +1,17 @@
 .main-form__cat {
-  margin: 0 auto 23px;
+  margin: 0 auto 24px;
+}
+
+.main-form__cat-aim {
+  margin-bottom: 25px;
 }
 
 .main-form__owner {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .main-form__comment {
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .main-form__additional {
@@ -16,4 +20,63 @@
 
 .main-form__submit {
   margin: 0 auto 32px;
+  max-width: $mobile-max-width;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form__cat {
+    margin: 0 auto 72px;
+  }
+
+  .main-form__cat-aim {
+    max-width: $tablet-max-width;
+    margin: 0 auto 75px;
+  }
+
+  .main-form__owner {
+    margin-bottom: 66px;
+  }
+
+  .main-form__comment {
+    margin-bottom: 90px;
+  }
+
+  .main-form__additional {
+    margin-bottom: 38px;
+  }
+
+  .main-form__submit {
+    margin: 0 auto 50px;
+    max-width: $tablet-max-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form__desktop-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto 69px;
+  }
+
+  .main-form__cat {
+    margin: 0;
+  }
+
+  .main-form__cat-aim {
+    margin: 0;
+  }
+
+  .main-form__owner {
+    margin-bottom: 67px;
+  }
+
+  .main-form__additional {
+    margin-bottom: 56px;
+  }
+
+  .main-form__submit {
+    margin: 0 auto 62px;
+    max-width: 1220px;
+  }
 }

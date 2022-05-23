@@ -1,6 +1,5 @@
 .main-header__container {
   text-align: center;
-
   position: relative;
 }
 
@@ -18,8 +17,8 @@
 
 .main-header__logo-name {
   display: inline-block;
-  margin-top: 22px;
-  margin-bottom: 26px;
+  margin-top: 25px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -71,12 +70,27 @@
   }
 
   .main-header__logo-image {
-    top: 53px;
+    //top: 53px;
+    display: block;
+    position: static;
+    margin: 53px 0 0;
   }
 
   .main-header__main-navigation {
     margin: 0;
     padding-top: 69px;
     padding-left: 130px;
+  }
+
+  .main-header--one-color {
+      background: #ffffff;
+
+    & .main-header__logo-image {
+      //top: 47px;
+    }
+
+    & .main-header__main-navigation {
+      //padding-top: 61px;
+    }
   }
 }

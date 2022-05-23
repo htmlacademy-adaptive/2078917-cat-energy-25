@@ -1,3 +1,19 @@
 .owner-list__item:not(:last-of-type) {
   margin-bottom: 14px;
 }
+
+@media (min-width: $tablet-width) {
+  .owner-list__item:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .owner-list__item {
+    width: 570px;
+  }
+
+  .owner-list__item:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}

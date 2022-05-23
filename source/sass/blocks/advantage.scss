@@ -54,6 +54,7 @@
     background-repeat: no-repeat;
     height: 12px;
     width: 32px;
+    min-width: 32px;//без этого уменьшает ширину при заполнении текста слева
     margin: 0 0 0 17px;
     transition: background 0.1s ease;
   }

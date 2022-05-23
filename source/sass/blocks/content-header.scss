@@ -1,8 +1,8 @@
 .content-header {
-  padding: 0 $mobile-space 0 $mobile-space;
+  padding: 0 $mobile-space;
   max-width: $mobile-max-width;
-  box-sizing: border-box;
   margin: 0 auto;
+  border-top: 1px solid #e6e6e6;
 }
 
 .content-header__title {
@@ -23,6 +23,35 @@
 
 @media (min-width: $tablet-width) {
   .content-header {
-    margin: 65px 0 80px;
+    margin:67px auto 66px;
+    max-width: $tablet-max-width;
+    padding: 0 calc($tablet-space + 40px);
+    border-top: none;
+  }
+
+  .content-header__title {
+    margin: 0 0 53px;
+  }
+
+  .content-header__instruction {
+    font-size: 20px;
+    line-height: 30px;
+    width: 52%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .content-header {
+    padding: 0 $desktop-space;
+    margin: 70px auto 65px;
+    max-width: 1220px;
+  }
+
+  .content-header__title {
+    margin: 0 0 58px;
+  }
+
+  .content-header__instruction {
+    width: 30%;
   }
 }

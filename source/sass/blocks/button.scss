@@ -6,9 +6,12 @@
   background-color: #68b738;
   text-align: center;
   border: none;
+  cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: #5eaa2f;
+    outline: none;
   }
 
   &:active {
@@ -23,7 +26,7 @@
   font-size: 14px;
   line-height: 18px;
   vertical-align: middle;
-  padding: 11px 11px;
+  padding: 11px;
 
   &:active {
     opacity: 0.3;
@@ -40,16 +43,17 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  padding: 11px 11px;
+  padding: 11px;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
 }
 
 .button--order {
-  height: 40px;
 
   & .button__text {
     font-size: 16px;
-    line-height: 18px;
-    padding: 0;
   }
 }
 
@@ -59,7 +63,6 @@
   & .button__text {
     color: #444444;
     font-size: 16px;
-    line-height: 18px;
   }
 
   &:hover {
@@ -75,20 +78,27 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    height: 54px;
-
     &--order {
-      height: 40px;
+      .button__text {
+        padding: 10px;
+      }
     }
 
     &--fade {
-      height: 40px;
+      .button__text {
+        padding: 10px;
+      }
     }
   }
 
   .button__text {
     font-size: 20px;
     line-height: 20px;
-    padding: 0;
+    padding: 17px;
+  }
+
+  .button--submit {
+    font-size: 20px;
+    padding: 17px;
   }
 }

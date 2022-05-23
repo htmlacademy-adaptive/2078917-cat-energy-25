@@ -8,6 +8,12 @@
   line-height: 17px;
   font-size: 16px;
   position: relative;
+
+  &--number {
+    .input-form__name {
+      margin-right: 16px;
+    }
+  }
 }
 
 .input-form__name {
@@ -61,9 +67,14 @@
 }
 
 .input-form--with-email {
-  &::after {
+  & .input-form__email-svg {
+    position: absolute;
+    right: 16px;//18
+    stroke: #222222;
+  }
+  /*&::after {
     content: "";
-    background: url("../../img/icon_email.svg");
+    background: url("../img/sprite.svg#icon_email");
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
@@ -74,21 +85,34 @@
     position: absolute;
     top: 4px;
     right: 6px;
-  }
+  }*/
 
   & .input-form__name {
-    margin-right: 10px;
+    margin-right: 12px;
   }
 
   & .input-form__field {
-    padding: 0 50px 0 17px;
+    padding: 0 50px 0 13px;
+  }
+
+  & .input-form__field:focus + .input-form__email-svg {
+    stroke: #68b738;
+  }
+
+  & .input-form__field:invalid + .input-form__email-svg {
+    stroke: #ff8282;
   }
 }
 
 .input-form--with-phone {
-  &::after {
+
+  & .input-form__phone-svg {
+    position: absolute;
+    right: 13px;//18
+  }
+  /*&::after {
     content: "";
-    background: url("../../img/icon_phone.svg");
+    background: url("../img/sprite.svg#icon_phone");
     background-repeat: no-repeat;
     background-position: center;
     width: 40px;
@@ -99,13 +123,72 @@
     position: absolute;
     top: 4px;
     right: 3px;
-  }
+  }*/
 
   & .input-form__name {
-    margin-right: 8px;
+    margin-right: 10px;
   }
 
   & .input-form__field {
-    padding: 0 50px 0 17px;
+    padding: 0 50px 0 15px;
+  }
+
+  & .input-form__field:focus + .input-form__phone-svg {
+    fill: #68b738;
+  }
+
+  & .input-form__field:invalid + .input-form__phone-svg {
+    fill: #ff8282;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input-form {
+    font-size: 20px;
+    line-height: 30px;
+    &--number {
+      .input-form__name {
+        margin-right: 19px;
+      }
+    }
+  }
+
+  .input-form__name {
+
+    margin-right: 17px;
+  }
+
+  .input-form__field {
+    height: 52px;
+    font-size: 20px;
+    padding: 0 0 0 18px;
+  }
+
+  .input-form--with-email {
+    & .input-form__name {
+      margin-right: 20px;
+    }
+
+    & .input-form__field {
+      padding: 0 50px 0 21px;
+    }
+
+    & .input-form__email-svg {
+      right: 18px;
+    }
+  }
+
+  .input-form--with-phone {
+    & .input-form__name {
+      margin-right: 14px;
+    }
+
+    & .input-form__field {
+      padding: 0 50px 0 20px;
+    }
+
+    & .input-form__phone-svg {
+      right: 18px;
+    }
   }
 }

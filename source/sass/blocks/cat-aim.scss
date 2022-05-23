@@ -1,10 +1,6 @@
-.cat-aim {
-  margin-bottom: 26px;
-}
-
 .cat-aim__container {
   padding: 0 20px 0 20px;
-  max-width: 510px;
+  max-width: 550px;
   box-sizing: border-box;
   margin: 0 auto;
   border-top: 1px solid #f2f2f2;
@@ -13,12 +9,36 @@
 }
 
 .cat-aim__list {
-  margin: 24px 0 16px;
+  margin: 22px 0 18px;
 }
 
 @media (min-width: 510px) {
   .cat-aim__container {
-    border-left: 1px solid #f2f2f2;
-    border-right: 1px solid #f2f2f2;
+    //border-left: 1px solid #f2f2f2;
+    //border-right: 1px solid #f2f2f2;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cat-aim {
+    padding: 0 calc($tablet-space + 38px) 0 calc($tablet-space + 40px);
+  }
+
+  .cat-aim__container {
+    border: 1px solid #f2f2f2;
+    padding: 0;
+    max-width: none;
+  }
+
+  .cat-aim__list {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-aim {
+    max-width: none;
+    width: 570px;
+    padding: 0;
   }
 }

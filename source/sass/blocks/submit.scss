@@ -1,11 +1,12 @@
 .submit {
-  max-width: 550px;
-  min-width: 320px;
-  box-sizing: border-box;
+  //max-width: 550px;
+  //min-width: 320px;
+  //box-sizing: border-box;
+  padding: 0 $mobile-space;
 }
 
 .submit__container {
-  margin: 0 20px;
+  //margin: 0 20px;
 }
 
 .submit__button {
@@ -19,4 +20,32 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .submit {
+    padding: 0 calc($tablet-space + 40px) 0 calc($tablet-space + 40px);
+  }
+
+  .submit__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+
+  .submit__legend {
+    text-align: left;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .submit {
+    padding: 0;
+  }
+
+  .submit__container {
+    column-gap: 80px;
+  }
 }

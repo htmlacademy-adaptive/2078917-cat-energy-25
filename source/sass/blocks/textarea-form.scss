@@ -4,10 +4,33 @@
   text-transform: uppercase;
   color: #444444;
   font-size: 16px;
-  padding: 6px 0 0 15px;
+  padding: 4px 0 0 15px;
   resize: none;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
 
   &::placeholder {
     color: #444444;
+  }
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+    outline: none;
+  }
+
+  &:invalid {
+    border-color: #ff8282;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textarea-form {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 9px 0 0 18px;
   }
 }

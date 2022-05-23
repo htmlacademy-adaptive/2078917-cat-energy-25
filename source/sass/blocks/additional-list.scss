@@ -1,3 +1,30 @@
+.additional-list {
+  list-style: none;
+  padding: 0 $mobile-space;
+}
+
 .additional-list__item:not(:last-of-type) {
   margin-bottom: 12px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-list {
+    padding: 0 calc($tablet-space + 40px) 0 calc($tablet-space + 40px);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-list {
+    padding: 0;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 81px;
+  }
+
+  .additional-list__item:not(:last-of-type) {
+    margin: 0 ;
+  }
 }
