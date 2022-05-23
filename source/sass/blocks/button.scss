@@ -46,12 +46,11 @@
   padding: 11px;
 
   &:active {
-    color: rgba(255, 255, 255, 0.3)
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .button--order {
-
   & .button__text {
     font-size: 16px;
   }

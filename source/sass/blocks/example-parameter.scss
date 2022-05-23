@@ -61,8 +61,10 @@
 @media (min-width: $tablet-width) {
   .example-parameter {
     flex-direction: column;
+
     &--cost {
       text-align: right;
+
       .example-parameter__value {
         display: block;
         border: none;

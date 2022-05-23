@@ -105,7 +105,6 @@
 }
 
 .input-form--with-phone {
-
   & .input-form__phone-svg {
     position: absolute;
     right: 13px;//18
@@ -146,6 +145,7 @@
   .input-form {
     font-size: 20px;
     line-height: 30px;
+
     &--number {
       .input-form__name {
         margin-right: 19px;

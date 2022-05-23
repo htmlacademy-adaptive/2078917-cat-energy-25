@@ -89,12 +89,10 @@
     border-top: none;
     margin-right: 36px;
 
-    &--current
-    {
+    &--current {
       & .main-navigation__link {
         border-bottom: 2px solid #68b738;
       }
-
     }
   }
 
@@ -128,7 +126,6 @@
         border-bottom-color: #ffffff;
         overflow: hidden;
       }
-
     }
   }
 
