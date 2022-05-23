@@ -6,3 +6,13 @@
 .aim-list__item:not(:last-of-type) {
   margin-bottom: 13px;
 }
+
+@media (min-width: $tablet-width) {
+  .aim-list {
+    padding: 30px 0 29px 28px;
+  }
+
+  .aim-list__item:not(:last-of-type) {
+    margin-bottom: 23px;
+  }
+}

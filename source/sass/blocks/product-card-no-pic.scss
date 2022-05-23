@@ -1,0 +1,130 @@
+.product-card-no-pic {
+  padding: 12px 0 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.product-card-no-pic__name {
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  text-transform: uppercase;
+  margin: 0 0 15px;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.product-card-no-pic__parameters-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 14px 2px;
+}
+
+.product-card-no-pic__parameters-item {
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
+
+.product-card-no-pic__parameter-name {
+  //margin: 0 15px 0 0;
+  width: 45%;
+  text-align: left;
+}
+
+.product-card-no-pic__parameter-value {
+  //margin: 0 0 0 15px;
+  width: 40%;
+  text-align: right;
+}
+
+
+.product-card-no-pic__order {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .product-card-no-pic {
+    padding: 27px 38px 26px;
+  }
+
+  .product-card-no-pic__name {
+    display: block;
+    width: 45%;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 25px;
+    float: left;
+  }
+
+  .product-card-no-pic__parameters-list {
+    display: block;
+    margin: 0 0 25px;
+    float: right;
+    width: 36%;
+  }
+
+  .product-card-no-pic__parameters-item {
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product-card-no-pic__parameter-name {
+    width: 60%;
+    text-align: right;
+    //margin: 0 49px 0 0;
+  }
+
+  .product-card-no-pic__parameter-value {
+    width: 30%;
+  }
+
+  .product-card-no-pic__order {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card-no-pic {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    align-items: center;
+  }
+
+  .product-card-no-pic__name {
+    margin: 0;
+    padding: 0;
+    width: 324px;
+    float: none;
+  }
+
+  .product-card-no-pic__parameters-list {
+    margin: 0;
+    display: flex;
+    float: none;
+  }
+
+  .product-card-no-pic__parameter-name {
+    width: 244px;
+    text-align: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .product-card-no-pic__parameter-value {
+    width: 82px;
+    text-align: left;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .product-card-no-pic__order {
+    width: 244px;
+    margin: 15px 0 16px;
+  }
+}

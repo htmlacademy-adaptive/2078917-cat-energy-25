@@ -1,6 +1,21 @@
 .cat-form {
   padding: 0 20px 0 20px;
   max-width: 550px;
-  min-width: 320px;
-  box-sizing: border-box;
+  //min-width: 320px;
+  //box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .cat-form {
+    padding: 0 calc($tablet-space + 38px) 0 calc($tablet-space + 40px);
+    max-width: $tablet-max-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-form {
+    padding: 0;
+    width: 570px;
+    max-width: none;
+  }
 }

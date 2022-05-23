@@ -1,0 +1,16 @@
+.main-title {
+  font-size: 36px;
+  line-height: 36px;
+  //margin: 0;
+  font-family: "oswald", "Arial", sans-serif;
+  font-weight: 400;
+  display: block;
+  //vertical-align: top;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
