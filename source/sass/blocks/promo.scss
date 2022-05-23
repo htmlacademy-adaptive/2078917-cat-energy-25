@@ -16,7 +16,7 @@
 }
 
 .promo__inner-wrapper {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile.jpg") center top/contain no-repeat;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile.jpg") center top/contain no-repeat, #444348;
   position: relative;
   z-index: -1;
   padding: 0 $mobile-space 164px;
@@ -126,7 +126,7 @@
   .promo::before {
     content: "";
     background: url("../img/index-promo-background-desktop.jpg") no-repeat;
-    background-size: 1044px 696px;
+    background-size: cover;//1044px 696px;
     height: 696px;
     width: 50%;
     display: block;

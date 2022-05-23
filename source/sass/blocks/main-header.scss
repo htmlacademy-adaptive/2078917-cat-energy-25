@@ -57,6 +57,8 @@
 @media (min-width: $desktop-width) {
   .main-header {
     background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
+    position: relative;
+    z-index: 10;
   }
 
   .main-header__container {

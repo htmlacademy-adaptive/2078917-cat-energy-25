@@ -2,3 +2,21 @@
   min-width: 320px;
   margin: 0;
 }
+
+@media (min-width: $desktop-width) {
+  .page-body--index {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 50%;
+      height: 600px;
+      background-color: #4b494d;
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}
