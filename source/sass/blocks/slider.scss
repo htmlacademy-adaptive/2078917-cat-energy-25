@@ -17,6 +17,7 @@
 .slider__container--before {
   z-index: 5;
   background: #eaeaea;
+  width: 100%;
 }
 
 .slider__container--after {
@@ -73,6 +74,10 @@
   .slider__container {
     width: 592px;
     height: 511px;
+  }
+
+  .slider__container--before {
+    width: 50%;
   }
 
   .slider__container--state-before {

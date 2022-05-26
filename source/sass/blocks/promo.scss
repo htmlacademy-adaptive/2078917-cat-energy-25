@@ -16,7 +16,7 @@
 }
 
 .promo__inner-wrapper {
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile.jpg") center top/contain no-repeat, #444348;
+  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile.jpg") center bottom/contain no-repeat, linear-gradient(to right, #504f54 50%, #444348 50%);
   position: relative;
   z-index: -1;
   padding: 0 $mobile-space 164px;
@@ -24,8 +24,7 @@
 
 @media /*only screen and (-webkit-min-device-pixel-ratio: 2),*/only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .promo__inner-wrapper {
-    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile@2x.jpg") center top/contain no-repeat;
-    background-size: 280px 270px;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-promo-background-mobile@2x.jpg") center bottom/contain no-repeat, linear-gradient(to right, #504f54 50%, #444348 50%);
   }
 }
 
