@@ -4,8 +4,11 @@
 }
 
 .product-card-no-pic__name {
+  display: block;
   font-size: 16px;
   line-height: 16px;
+  color: #222222;
+  text-decoration: none;
   width: 100%;
   text-transform: uppercase;
   margin: 0 0 15px;

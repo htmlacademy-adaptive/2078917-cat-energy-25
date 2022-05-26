@@ -11,9 +11,10 @@
 @media (min-width: $desktop-width) {
   .owner-list__item {
     width: 570px;
+    margin-bottom: 20px;
   }
 
   .owner-list__item:not(:last-of-type) {
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
 }
